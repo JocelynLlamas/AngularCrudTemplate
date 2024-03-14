@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Add new hero</h1>
+<div mat-dialog-content>
+  <form>
+    <div class="row">
+      <div class="col-md-12">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Name" type="text" maxlength="50" [(ngModel)]="heroName">
+        </mat-form-field>
+      </div>
+      <div class="col-md-12">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="First Name" type="text" maxlength="50" [(ngModel)]="heroFirstName">
+        </mat-form-field>
+      </div>
+      <div class="col-md-12">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Last Name" type="text" maxlength="50" [(ngModel)]="heroLastName">
+        </mat-form-field>
+      </div>
+      <div class="col-md-12">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Place" type="text" maxlength="50" [(ngModel)]="heroPlace">
+        </mat-form-field>
+      </div>
+    </div>
+    <button mat-raised-button type="submit" class="btn btn-danger pull-right" (click)="addHero()">Add hero</button>
+    <div class="clearfix"></div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Cerrar</button>
+  <!-- Puedes agregar más botones u opciones según sea necesario -->
+</div>
